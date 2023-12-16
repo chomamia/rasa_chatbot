@@ -1,0 +1,13 @@
+cd path/Rasa
+
+- $ rasa init
+- $ rasa run --cors"*" --enable-api
+- $ rasa run actions
+
+sau đó vào Rasa/endpoints.yml bỏ comment đoạn
+ action_endpoint:
+ url: "http://localhost:5055/webhook"
+
+cd RasaUI
+- npm install
+- npm start
